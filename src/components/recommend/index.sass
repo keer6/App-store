@@ -1,0 +1,49 @@
+.recommend
+    margin-top: 0.52rem
+    padding: 0.16rem
+    border-bottom: 1px solid #f2f2f2
+    .rec_title
+        padding-bottom: 0.16rem
+        h3
+            font-size: 0.18rem
+    .rec_list
+        width: 100%
+        ul
+            display: flex
+            overflow: auto
+            &::-webkit-scrollbar
+                display: none
+
+            &::-webkit-scrollbar
+                width: 0rem
+
+            li
+                justify-content: start
+                align-items: start
+                margin-right: 0.14rem
+                font-size: 0.12rem
+                img
+                    width: 75px
+                    height: 75px
+                    border-radius: 14px
+                @media (max-width: 374px)
+                    img
+                        width: 55px
+                        height: 55px
+                @media (min-width: 414px)
+                    img
+                        width: 100px
+                        height: 100px
+                p
+                    width: 100%
+                    line-height: 0.16rem
+                    font-size: 0.12rem
+                    word-break: break-all
+                    text-overflow: ellipsis//显示为省略号
+                    display: -webkit-box//对象作为伸缩盒子模型显示
+                    -webkit-box-orient: vertical//设置或检索伸缩盒对象的子元素的排列方式
+                    -webkit-line-clamp: 2//显示行数## 标题文字 ##
+                    overflow: hidden
+                    span
+                        color: #666
+                        font-size: 0.12rem
